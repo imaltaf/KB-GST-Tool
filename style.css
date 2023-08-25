@@ -1,5 +1,5 @@
 body {
-    background: url('/gst-tool/7103071.jpg'); /* Replace with your background image path */
+    background: url('/7103071.jpg'); /* Replace with your background image path */
     background-size: cover;
     background-blur: 20px; /* Adjust the blur effect as needed */
     backdrop-filter: blur(20px); /* Fallback for browsers that don't support backdrop-filter */
