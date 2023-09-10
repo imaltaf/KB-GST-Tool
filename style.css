@@ -11,7 +11,7 @@ body {
     min-height: 100vh;
   }
   /* Add this part for the Glassmorphism effect */
-  .container {
+  .container0 {
     background: rgba(255, 255, 255, 0.5); /* Adjust the opacity as needed */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -149,3 +149,68 @@ body {
     }
   }
   
+/* styles.css */
+
+/* Navbar styles */
+/* Navbar styles */
+.navbar {
+  background-color: #0d0d0e; /* Navbar background color */
+  color: #ffffff; /* Navbar text color */
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure the navbar is above other content */
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  text-decoration: none;
+  color: #ffffff; /* Logo text color */
+  font-size: 24px; /* Logo font size */
+  font-weight: bold;
+}
+
+
+/* Footer styles */
+footer {
+  background-color: #000000; /* Footer background color */
+  color: #ffffff; /* Footer text color */
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px; /* Footer font size */
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 1000; /* Ensure the footer is above other content */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+}
+
+
+/* Logo styles */
+footer img {
+  width: 50px; /* Adjust the width of the logo */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add spacing between the logo and text */
+  vertical-align: middle; /* Align the logo vertically with the text */
+}
+
+a {
+  color: greenyellow;
+}
