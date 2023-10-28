@@ -35,6 +35,40 @@ body {
     box-shadow: 0 0 10px rgba(81, 45, 168, 0.7);
     border-color: rgba(81, 45, 168, 0.7);
   }
+
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust the opacity as needed */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: rgb(8, 8, 8);
+    transition: box-shadow 0.3s ease;
+  }
+  input[type="number"]:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(81, 45, 168, 0.7);
+    border-color: rgba(81, 45, 168, 0.7);
+  }
+
+  select[type="state"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust the opacity as needed */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: rgb(8, 8, 8);
+    transition: box-shadow 0.3s ease;
+  }
+  select[type="state"]:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(81, 45, 168, 0.7);
+    border-color: rgba(81, 45, 168, 0.7);
+  }
   .webflow-style-input input::placeholder {
     color: rgba(255, 255, 255, 0.5); /* Adjust the placeholder color opacity as needed */
   }
@@ -214,3 +248,5 @@ footer img {
 a {
   color: greenyellow;
 }
+
+
