@@ -1,7 +1,7 @@
 version: '3'
 services:
   bl_tool:
-    image: darkmechanic/bl_tool
+    image: darkmechanic/bl_tool:latest
     ports:
       - "8089:80"  # Map the container's port 80 to the host's port 8089 (adjust as needed)
     restart: unless-stopped  # Automatically restart the container unless explicitly stopped
