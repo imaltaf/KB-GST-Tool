@@ -7,7 +7,7 @@ pipeline {
         maven 'Maven3'
     }
     environment {
-        APP_NAME = "BL_tool"
+        APP_NAME = "bl_tool"
         RELEASE = "2.0.0"
         DOCKER_USER = "darkmechanic"
         DOCKER_PASS = 'dockerhub'
