@@ -1,9 +1,7 @@
-version: "3"
+version: '3'
 services:
-  gst-tool0.1:
-    image: darkmechanic/gst-tool0.1:latest
-    container_name: gst-tool0.1
+  bl_tool:
+    image: darkmechanic/bl_tool
     ports:
-      - "8089:80"
-
-    restart: unless-stopped
+      - "8089:80"  # Map the container's port 80 to the host's port 8089 (adjust as needed)
+    restart: unless-stopped  # Automatically restart the container unless explicitly stopped
