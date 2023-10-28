@@ -1,0 +1,9 @@
+version: "3"
+services:
+  gst-tool0.1:
+    image: darkmechanic/gst-tool0.1:latest
+    container_name: gst-tool0.1
+    ports:
+      - "8089:80"
+
+    restart: unless-stopped
