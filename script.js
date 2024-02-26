@@ -47,6 +47,7 @@ function setupStateAutosuggestion() {
       document.getElementById("stateSuggestions").innerHTML = "";
   });
 }
+
 // Function to copy the formatted content
 function copyFormattedContent() {
   const tradeName = removeSpecialCharacters(document.getElementById("tradeName").value);
@@ -90,9 +91,16 @@ function copyFormattedContent() {
 
 // Function to reset input fields
 function resetInputFields() {
+  // Reset all text input fields
   document.querySelectorAll("input[type='text']").forEach(input => {
       input.value = "";
   });
+
+  // Reset RegDate and ExpiryDate fields
+  document.getElementById("RegDate").value = "";
+  document.getElementById("ExpiryDate").value = "";
+
+  // Clear formatted content
   document.getElementById("formattedContent").value = "";
 }
 

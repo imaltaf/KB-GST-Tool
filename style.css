@@ -230,8 +230,9 @@ textarea:focus {
 
 /* Footer styles */
 footer {
-  background-color: #000000; /* Footer background color */
-  color: #ffffff; /* Footer text color */
+  background: rgba(255, 255, 255, 0.15); /* Adjust the opacity as needed */
+  backdrop-filter: blur(10px); /* Add backdrop filter for glassmorphism effect */
+  padding: 20px 0; /* Adjust padding as needed */ /* Footer text color */
   text-align: center;
   padding: 10px 0;
   font-size: 14px; /* Footer font size */
@@ -242,12 +243,7 @@ footer {
   z-index: 1000; /* Ensure the footer is above other content */
 }
 
-/* Footer styles for small screens */
-@media (max-width: 768px) {
-  footer {
-      position: static; /* Make footer static for small screens */
-  }
-}
+
 
 /* Logo styles for footer */
 footer img {
@@ -259,5 +255,11 @@ footer img {
 
 /* Link styles */
 a {
-  color: greenyellow;
+  color: rgb(252, 252, 252);
+}
+/* Footer styles for small screens */
+@media (max-width: 768px) {
+  footer {
+      position: static; /* Make footer static for small screens */
+  }
 }
