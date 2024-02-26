@@ -1,230 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header_h1 {
+  color: #FFF;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+h2, h5, h4 {
+  color: #161616;
+}
+
+/* Body styles */
 body {
-    background: url('/7103071.jpg'); /* Replace with your background image path */
-    background-size: cover;
-    background-blur: 20px; /* Adjust the blur effect as needed */
-    backdrop-filter: blur(20px); /* Fallback for browsers that don't support backdrop-filter */
-    font-family: Arial, sans-serif;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-  /* Add this part for the Glassmorphism effect */
-  .container0 {
-    background: rgba(255, 255, 255, 0.5); /* Adjust the opacity as needed */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    box-sizing: border-box;
-  }
 
-  input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    background-color: rgba(255, 255, 255, 0.1); /* Adjust the opacity as needed */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    color: rgb(8, 8, 8);
-    transition: box-shadow 0.3s ease;
-  }
-  input[type="text"]:focus {
-    outline: none;
-    box-shadow: 0 0 10px rgba(81, 45, 168, 0.7);
-    border-color: rgba(81, 45, 168, 0.7);
-  }
+  backdrop-filter: blur(20px); /* Fallback for browsers that don't support backdrop-filter */
+  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #27252c, #8E2DE2);
+  background-size: cover; /* Ensure the background covers the entire viewport */
+  background-attachment: fixed; 
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 
-  input[type="number"] {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    background-color: rgba(255, 255, 255, 0.1); /* Adjust the opacity as needed */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    color: rgb(8, 8, 8);
-    transition: box-shadow 0.3s ease;
-  }
-  input[type="number"]:focus {
-    outline: none;
-    box-shadow: 0 0 10px rgba(81, 45, 168, 0.7);
-    border-color: rgba(81, 45, 168, 0.7);
-  }
+/* Container styles for Glassmorphism effect */
+.container0 {
+  background: rgba(255, 255, 255, 0.5); /* Adjust the opacity as needed */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  box-sizing: border-box;
+  width: 90%;
+  max-width: 900px;
+  text-align: center;
+}
 
-  select[type="state"] {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    background-color: rgba(255, 255, 255, 0.1); /* Adjust the opacity as needed */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    color: rgb(8, 8, 8);
-    transition: box-shadow 0.3s ease;
-  }
-  select[type="state"]:focus {
-    outline: none;
-    box-shadow: 0 0 10px rgba(81, 45, 168, 0.7);
-    border-color: rgba(81, 45, 168, 0.7);
-  }
-  .webflow-style-input input::placeholder {
-    color: rgba(255, 255, 255, 0.5); /* Adjust the placeholder color opacity as needed */
-  }
-  /* Add this part for the button design */
-  button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #512DA8; /* Adjust the button color */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px; /* Adjust the font size */
-    font-weight: bold; /* Add font weight */
-    text-transform: uppercase; /* Convert text to uppercase */
-    position: relative;
-    overflow: hidden;
-    transition: background-color 0.3s, box-shadow 0.3s;
-  }
-  button::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, #B294FF, #981aec, #FEFFB8, #8e57e6, #B294FF, #8257e6);
-    transition: left 0.3s;
-  }
-  button:hover {
-    background-color: #512DA8; /* Adjust the button hover color */
-    box-shadow: 0 0 10px rgba(81, 45, 168, 0.7); /* Add the glow effect */
-  }
-  button:hover::before {
-    left: 100%;
-  }
-      /* Add styles for the reset button */
-      #resetButton {
-    background-color: #FF5722; /* Red color for reset button */
-    margin-left: 10px; /* Add some spacing */
-  }
-  #resetButton:hover {
-    background-color: #FF5722; /* Red color on hover */
-    box-shadow: 0 0 10px rgba(255, 87, 34, 0.7); /* Glow effect on hover */
-  }
-  textarea {
-    width: 100%;
-    height: 100px;
-    resize: none;
-    margin-top: 10px;
-    border: 1px solid #523cd1; /* Border color */
-    border-radius: 5px;
-    padding: 10px;
-    box-sizing: border-box;
-    color: #8257e6; /* Text color */
-    background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
-    font-size: 16px; /* Adjust font size */
-    font-family: Arial, sans-serif; /* Adjust font family */
-    line-height: 1.5; /* Adjust line height */
-  }
-  /* Highlight textarea on focus */
-  textarea:focus {
-    outline: none;
-    border-color: #8257e6; /* Border color on focus */
-    box-shadow: 0 0 10px rgba(130, 87, 230, 0.7); /* Glow effect on focus */
-  }
+/* Input styles */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin: 8px 0;
+  background-color: rgba(255, 255, 255, 0.1); /* Adjust the opacity as needed */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #111111;
+  transition: box-shadow 0.3s ease;
+}
 
-  /* Add styles for the tool name */
-  .tool-name {
-    position: absolute;
-    top: -40px; /* Adjust the spacing from the container */
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 24px; /* Adjust font size */
-    font-weight: bold; /* Add font weight */
-    color: #8257e6; /* Text color */
-    animation: slideUp 1s ease-in-out infinite alternate; /* Add animation */
-  }
-  @keyframes slideUp {
-    from {
+/* Input focus styles */
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(81, 45, 168, 0.7);
+  border-color: rgba(81, 45, 168, 0.7);
+}
+
+/* Placeholder styles */
+::placeholder {
+  color: rgba(10, 10, 10, 0.5); /* Adjust the placeholder color opacity as needed */
+}
+
+
+button,
+.reset-button,
+.search-button,
+.header-button {
+  padding: 8px 16px; /* Reduced padding to make buttons smaller */
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #FFF;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: border-color 0.3s ease; /* Add transition effect for hover */
+}
+
+button:last-child,
+.reset-button:last-child,
+.search-button:last-child,
+.header-button:last-child {
+  margin-right: 0;
+}
+
+button:hover,
+.search-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border: 2px solid rgb(178, 32, 214);
+}
+
+.reset-button {
+  background: rgba(255, 0, 0, 0.2); /* Red background for reset button */
+}
+
+.reset-button:hover {
+  background: rgba(255, 0, 0, 0.3); /* Darker red background on hover */
+  border: 2px solid red; /* Red border on hover */
+}
+
+#resetButton {
+  background: rgba(255, 0, 0, 0.2); /* Red background for reset button */
+}
+
+#resetButton:hover {
+  background: rgba(255, 0, 0, 0.3); /* Darker red background on hover */
+  border: 2px solid red; /* Red border on hover */
+}
+
+.button-0{
+  margin: 10px;
+}
+/* Textarea styles */
+textarea {
+  width: calc(100% - 20px);
+  height: 100px;
+  resize: none;
+  margin: 8px 0;
+  border: 1px solid #523cd1; /* Border color */
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #8257e6; /* Text color */
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+  font-size: 16px; /* Adjust font size */
+  font-family: Arial, sans-serif; /* Adjust font family */
+  line-height: 1.5; /* Adjust line height */
+}
+
+/* Textarea focus styles */
+textarea:focus {
+  outline: none;
+  border-color: #8257e6; /* Border color on focus */
+  box-shadow: 0 0 10px rgba(130, 87, 230, 0.7); /* Glow effect on focus */
+}
+
+/* Tool name styles */
+.tool-name {
+  position: absolute;
+  top: -40px; /* Adjust the spacing from the container */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px; /* Adjust font size */
+  font-weight: bold; /* Add font weight */
+  color: #8257e6; /* Text color */
+  animation: slideUp 1s ease-in-out infinite alternate; /* Add animation */
+}
+
+/* Add this part for the small input size and positioning */
+.small-input {
+  width: calc(30% - 5px); /* Adjust width for smaller size and spacing */
+  margin-right: 5px; /* Adjust spacing between inputs */
+}
+
+.date-container {
+  display: flex;
+}
+
+/* Add glow animation to select icon */
+.webflow-style-input select[type="state"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  background-color: rgba(255, 255, 255, 0.1); /* Adjust the opacity as needed */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: rgb(8, 8, 8);
+  transition: box-shadow 0.3s ease;
+  position: relative;
+}
+
+.webflow-style-input select[type="state"]:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(81, 45, 168, 0.7), 0 0 20px rgba(81, 45, 168, 0.5); /* Add the glow effect */
+}
+
+/* Tool name animation */
+@keyframes slideUp {
+  from {
       transform: translateX(-50%) translateY(-10px);
       opacity: 0;
-    }
-    to {
+  }
+  to {
       transform: translateX(-50%);
       opacity: 1;
-    }
   }
+}
 
-  @media (max-width: 768px) {
-    /* Adjust container width for smaller screens */
-    .container {
-      width: 90%;
-      max-width: 500px;
-    }
-  
-    /* Center-align the tool name on smaller screens */
-    .tool-name {
-      top: -30px;
-      font-size: 20px;
-    }
-  
-    /* Adjust input and button styles for smaller screens */
-    .webflow-style-input input[type="text"] {
-      font-size: 14px;
-      padding: 8px;
-    }
-  
-    .webflow-style-input button {
-      font-size: 14px;
-      padding: 8px 15px;
-    }
-  }
-  
-/* styles.css */
-
-/* Navbar styles */
-/* Navbar styles */
-/* Navbar styles */
-/* Navbar styles */
 /* Navbar styles */
 .navbar {
   background-color: rgba(25, 25, 27, 0.8); /* Transparent Navbar background color */
   color: #ffffff; /* Navbar text color */
   padding: 5px 5%; /* Adjust padding for responsiveness */
   position: fixed;
-  width: 90%; /* Adjust width for responsiveness */
+  width: 100%; /* Full width */
   top: 0;
   left: 0;
   z-index: 1000; /* Ensure the navbar is above other content */
 }
 
-/* Logo styles */
-.logo {
-  text-decoration: none;
-  color: #ffffff; /* Logo text color */
-  font-size: 14px; /* Adjust the logo font size */
-  font-weight: bold;
-}
-
-/* Responsive styles */
+/* Navbar styles for small screens */
 @media (max-width: 768px) {
   .navbar {
-    padding: 5px; /* Adjust padding for smaller screens */
-    width: 100%; /* Full width for smaller screens */
+      position: static; /* Make navbar static for small screens */
+      padding: 10px; /* Adjust padding */
   }
-  
-  .logo {
-    font-size: 12px; /* Adjust font size for smaller screens */
-  }
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 
 /* Logo styles */
@@ -234,14 +227,6 @@ body {
   font-size: 16px; /* Adjust the logo font size */
   font-weight: bold;
 }
-
-/* Responsive styles */
-@media (max-width: 768px) {
-  .logo {
-    font-size: 12px; /* Adjust font size for smaller screens */
-  }
-}
-
 
 /* Footer styles */
 footer {
@@ -257,19 +242,14 @@ footer {
   z-index: 1000; /* Ensure the footer is above other content */
 }
 
-/* Responsive styles */
+/* Footer styles for small screens */
 @media (max-width: 768px) {
-  .navbar {
-    padding: 10px;
-  }
-
-  .logo {
-    font-size: 20px;
+  footer {
+      position: static; /* Make footer static for small screens */
   }
 }
 
-
-/* Logo styles */
+/* Logo styles for footer */
 footer img {
   width: 50px; /* Adjust the width of the logo */
   height: auto; /* Maintain aspect ratio */
@@ -277,8 +257,7 @@ footer img {
   vertical-align: middle; /* Align the logo vertically with the text */
 }
 
+/* Link styles */
 a {
   color: greenyellow;
 }
-
-

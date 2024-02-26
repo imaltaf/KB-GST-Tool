@@ -4,91 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BL-Tool</title>
-     <!-- 
+    <!-- 
     - favicon
-  -->
-  <link rel="shortcut icon" href="/img/favicon_io/favicon-32x32.png" type="image/svg+xml">
-
-   <link rel="stylesheet" href="style.css"> 
+    -->
+    <link rel="shortcut icon" href="/img/favicon_io/favicon-32x32.png" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="container">
-        <a href="https://gst.imaltaf.online/" class="logo"><img src="/img/11Logo11-removebg-preview.png" alt="Logo"></a>
-        <!-- Add navigation links here -->
-      </div>
-    </nav>
-  </header>
-  <div class="container0">
+
+<div class="container0">
     <div class="tool-name">KB-Tool</div>
     <h2>Business Information</h2>
-    <label for="tradeName">Trade Name/Name of Business:</label>
-    <input type="text" id="tradeName">
-    <label for="natureOfBusiness">Nature of Business/Line of Business/Type of Business:</label>
-    <input type="text" id="natureOfBusiness">
-    <label for="line1">Line1:</label>
-    <input type="text" id="line1">
-    <label for="line2">Line2:</label>
-    <input type="text" id="line2">
-    <label for="pinCode">PinCode:</label>
-    <input type="text" id="pinCode" pattern="\d*" inputmode="numeric">
-    <label for="city">City:</label>
-    <input type="text" id="city">
-    <label for="city">state:</label>
-    <input type="text" id="state" class="webflow-style-input" list="states">
+    <input type="text" id="tradeName" placeholder="Trade Name/Name of Business">
+    <input type="text" id="natureOfBusiness" placeholder="Nature of Business/Line of Business/Type of Business">
+    <input type="text" id="line1" placeholder="Line1">
+    <input type="text" id="line2" placeholder="Line2">
+    <input type="text" id="pinCode" pattern="\d*" inputmode="numeric" placeholder="PinCode">
+    <input type="text" id="city" placeholder="City">
+    <input type="text" id="state" class="webflow-style-input" list="states" placeholder="State">
     <datalist id="states">
-      <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
-      <option value="Andhra Pradesh">Andhra Pradesh</option>
-      <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-      <option value="Assam">Assam</option>
-      <option value="Bihar">Bihar</option>
-      <option value="Chandigarh">Chandigarh</option>
-      <option value="Chhattisgarh">Chhattisgarh</option>
-      <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
-      <option value="Daman and Diu">Daman and Diu</option>
-      <option value="Delhi">Delhi</option>
-      <option value="Goa">Goa</option>
-      <option value="Gujarat">Gujarat</option>
-      <option value="Haryana">Haryana</option>
-      <option value="Himachal Pradesh">Himachal Pradesh</option>
-      <option value="Jharkhand">Jharkhand</option>
-      <option value="Karnataka">Karnataka</option>
-      <option value="Kerala">Kerala</option>
-      <option value="Lakshadweep">Lakshadweep</option>
-      <option value="Madhya Pradesh">Madhya Pradesh</option>
-      <option value="Maharashtra">Maharashtra</option>
-      <option value="Manipur">Manipur</option>
-      <option value="Meghalaya">Meghalaya</option>
-      <option value="Mizoram">Mizoram</option>
-      <option value="Nagaland">Nagaland</option>
-      <option value="Odisha">Odisha</option>
-      <option value="Puducherry">Puducherry</option>
-      <option value="Punjab">Punjab</option>
-      <option value="Rajasthan">Rajasthan</option>
-      <option value="Sikkim">Sikkim</option>
-      <option value="Tamil Nadu">Tamil Nadu</option>
-      <option value="Telangana">Telangana</option>
-      <option value="Tripura">Tripura</option>
-      <option value="Uttar Pradesh">Uttar Pradesh</option>
-      <option value="Uttarakhand">Uttarakhand</option>
-      <option value="West Bengal">West Bengal</option>
-    </select>
-  </datalist>
+        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+        <option value="Andhra Pradesh">Andhra Pradesh</option>
+        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+        <option value="Assam">Assam</option>
+        <option value="Bihar">Bihar</option>
+        <option value="Chandigarh">Chandigarh</option>
+        <option value="Chhattisgarh">Chhattisgarh</option>
+        <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+        <option value="Daman and Diu">Daman and Diu</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Goa">Goa</option>
+        <option value="Gujarat">Gujarat</option>
+        <option value="Haryana">Haryana</option>
+        <option value="Himachal Pradesh">Himachal Pradesh</option>
+        <option value="Jharkhand">Jharkhand</option>
+        <option value="Karnataka">Karnataka</option>
+        <option value="Kerala">Kerala</option>
+        <option value="Lakshadweep">Lakshadweep</option>
+        <option value="Madhya Pradesh">Madhya Pradesh</option>
+        <option value="Maharashtra">Maharashtra</option>
+        <option value="Manipur">Manipur</option>
+        <option value="Meghalaya">Meghalaya</option>
+        <option value="Mizoram">Mizoram</option>
+        <option value="Nagaland">Nagaland</option>
+        <option value="Odisha">Odisha</option>
+        <option value="Puducherry">Puducherry</option>
+        <option value="Punjab">Punjab</option>
+        <option value="Rajasthan">Rajasthan</option>
+        <option value="Sikkim">Sikkim</option>
+        <option value="Tamil Nadu">Tamil Nadu</option>
+        <option value="Telangana">Telangana</option>
+        <option value="Tripura">Tripura</option>
+        <option value="Uttar Pradesh">Uttar Pradesh</option>
+        <option value="Uttarakhand">Uttarakhand</option>
+        <option value="West Bengal">West Bengal</option>
+        <!-- Add other states here -->
+    </datalist>
+
+    <input type="text" id="RegNo" class="webflow-style-input" list="RegNo" placeholder="RegNo">
+    <div class="date-container">
+      <input type="date" id="RegDate" class="small-input" placeholder="RegDate: DD/MM/YYYY">
+      <input type="date" id="ExpiryDate" class="small-input" placeholder="ExpiryDate: DD/MM/YYYY">
+  </div>
+  
     <button id="copyButton">Copy</button>
     <button id="resetButton">Reset</button>
     <h2>Formatted Information</h2>
     <textarea id="formattedContent" readonly></textarea>
-  </div>
+</div>
 
-  <footer>
+<footer>
     <div class="container">
-      <img src="/img/favicon_io/android-chrome-192x192.png" alt="Short Logo">
-      &copy; 2022  <a href="https://opensecai.com">OpensecAi</a>. All rights reserved <a href="https://imaltaf.online"> Devloped by ALTAF</a>
+        <img src="/img/favicon_io/android-chrome-192x192.png" alt="Short Logo">
+        &copy; 2022  <a href="https://opensecai.com">OpensecAi</a>. All rights reserved <a href="https://imaltaf.online"> Developed by ALTAF</a>
     </div>
-  </footer>
+</footer>
 
-  
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

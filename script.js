@@ -87,9 +87,12 @@ function copyFormattedContent() {
   const pinCode = removeSpecialCharacters(document.getElementById("pinCode").value);
   const city = removeSpecialCharacters(document.getElementById("city").value);
   const state = removeSpecialCharacters(document.getElementById("state").value);
+  const RegNo = removeSpecialCharacters(document.getElementById("RegNo").value);
+  const RegDate = formatDate(document.getElementById("RegDate").value);
+  const ExpiryDate = formatDate(document.getElementById("ExpiryDate").value);
 
   // Check if any of the required fields are empty
-  if (!tradeName || !natureOfBusiness || !line1 || !line2 || !pinCode || !city || !state) {
+  if (!tradeName || !natureOfBusiness || !line1 || !line2 || !pinCode || !city || !state || !RegNo) {
     alert("Please fill in all the required fields.");
     return;
   }
@@ -101,7 +104,10 @@ function copyFormattedContent() {
     `Line2: ${line2} | ` +
     `PinCode: ${pinCode} | ` +
     `City: ${city} | ` +
-    `State: ${state}`;
+    `State: ${state} | ` +
+    `RegNo: ${RegNo} | ` +
+    `RegDate: ${RegDate} | ` +
+    `ExpiryDate: ${ExpiryDate}`;
 
   const formattedContent = document.getElementById("formattedContent");
   formattedContent.value = formattedText;
@@ -115,6 +121,19 @@ function resetInputFields() {
     input.value = "";
   });
   document.getElementById("formattedContent").value = "";
+  document.getElementById("RegDate").value = "";
+  document.getElementById("ExpiryDate").value = "";
+}
+
+// Function to format date to DD/MM/YYYY format
+function formatDate(dateString) {
+    if (!dateString) return "NA"; // Return NA if date is not selected
+    const date = new Date(dateString);
+    date.setDate(date.getDate() + 1); // Increment the date by 1 to adjust for JavaScript's handling
+    const day = date.getDate().toString().padStart(2, "0");
+    const month = (date.getMonth() + 1).toString().padStart(2, "0");
+    const year = date.getFullYear();
+    return `${day}/${month}/${year}`;
 }
 
 // Run the functions when the page loads
